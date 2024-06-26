@@ -1,12 +1,22 @@
 import tkinter as tk
 
+
 def match():
+    ventana.mainloop()
+    acces = tk.Tk()
+    acces.title("Inicio de Sesion")
+    acces.geometry("250x50+850+300")
     username = ingreso.get()
     password = ingreso2.get()
     if username == password:
-        print("Ingreso Exitoso")
+        #print("Ingreso Exitoso")
+        acces_c = tk.Label(acces,text="Ingreso Exitoso")
+        acces_c.pack()
+
     else:
-        print("Acceso denegado")
+        #print("Acceso denegado")
+        acces_d = tk.Label(acces,text="Acceso denegado")
+        acces_d.pack()
 
 ventana = tk.Tk() #lo convierte en objeto
 ventana.title("Mi App")
@@ -28,7 +38,6 @@ button.place(x = 400, y= 200 )
 
 
 
-ventana.mainloop()
 
 
 
