@@ -4,6 +4,34 @@ import mysql.connector
 conexion = mysql.connector.connect(host="localhost",user="root",password="" , database = "videoclub")
 cursor = conexion.cursor()
 
+def registrarse():
+    vent_emergente = tk.Tk()
+    vent_emergente.geometry("300x200+450+120")
+
+    dni_etiqueta = tk.Label(vent_emergente,text = "DNI")
+    dni_etiqueta.place(x =150 , y = 150)
+    dni_entry = tk.Entry(vent_emergente,width= 30)
+    dni_entry.place(x = 250 , y = 150)
+
+    nombre_etiqueta = tk.Label(vent_emergente,text= "Nombre")
+    nombre_etiqueta.place(x = 150, y = 250)
+    nombre_entry = tk.Entry(vent_emergente,width=30)
+    nombre_entry.place(x = 250 , y = 250)
+
+    tel_etiqueta = tk.Label(vent_emergente,text= "Teléfono")
+    tel_etiqueta.place(x = 150, y = 350)
+    tel_entry = tk.Entry(vent_emergente,width=30)
+    tel_entry.place(x=250 , y =350)
+
+    dir_etiqueta = tk.Label(vent_emergente,text="Dirección")
+    dir_etiqueta.place(x = 150 , y =350)
+    dir_entry = tk.Entry(vent_emergente,width=30)
+    dir_entry.place(x = 250 , y = 350)
+
+    contra_etiqueta = 
+
+
+
 """def Inicio ():
     ventMenu.mainloop()
     if button_iniciar == True:
